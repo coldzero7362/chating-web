@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>채팅서버</title>
+    <link rel="stylesheet" href="/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="menu-box">
+            <div id="chat">
+                <div id="msgBox">
+                    <div class="msg">어서오세요</div>
+                    <div class="msg my">안녕하세요</div>
+                </div> 
+                <div id="inputBox">
+                    <input type="text" id="msg">
+                    <button id="btnSend"><i class="fas fa-arrow-circle-right fa-2x" style="color: white;"></i></button>
+                </div>
+            </div>
+            
+            <div id="userList">
+                <div class="user my">User1</div>
+            </div>
+        </div>
+        
+    </div>
+    <div id="popup">
+        <div class="inner">
+            <h2>what's your Name?</h2>
+            <input type="text" id="nickname" >
+            <button id="btnLogin"></button>
+        </div>
+    </div>
+</body>
+</html>
